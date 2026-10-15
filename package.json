@@ -1,0 +1,19 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "latest",
+        "laravel-vite-plugin": "latest",
+        "vite": "latest"
+    },
+    "dependencies": {
+        "lucide-react": "latest",
+        "react": "latest",
+        "react-dom": "latest",
+        "react-router-dom": "latest"
+    }
+}
