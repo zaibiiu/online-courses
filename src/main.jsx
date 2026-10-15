@@ -71,6 +71,8 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home notify={notify} />} />
+          <Route path="/login" element={<Auth mode="login" notify={notify} />} />
+          <Route path="/signup" element={<Auth mode="signup" notify={notify} />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
