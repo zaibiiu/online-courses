@@ -1,6 +1,6 @@
 # GlobeLearn
 
-A polished frontend concept for an all-in-one educational platform, built with Laravel and React.
+A polished React frontend concept for an all-in-one educational platform, inspired by the structure and green marketplace style of SpotMV.
 
 ## Included pages
 
@@ -12,23 +12,21 @@ A polished frontend concept for an all-in-one educational platform, built with L
 - Membership packages
 - Login and signup with GlobeP2P connection placeholder
 
-This repository is intentionally frontend-only. Content is static demo data and all backend integrations are represented as UI placeholders.
+This repository is intentionally frontend-only. Content is static demo data, login/signup use browser storage for the demo flow, and all future integrations are represented as UI placeholders.
 
 ## Local setup
 
 ```bash
-composer install
 npm install
-copy .env.example .env
-php artisan key:generate
 npm run dev
-php artisan serve
 ```
 
-Open `http://127.0.0.1:8000`.
+Open the local URL printed by Vite.
 
 ## Production build
 
 ```bash
 npm run build
 ```
+
+The static build is generated in `docs/` for GitHub Pages.

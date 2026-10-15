@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { HashRouter, Link, NavLink, Route, Routes, useNavigate, useParams } from 'react-router-dom';
-import '../css/app.css';
+import './styles.css';
 import {
   ArrowRight, Award, BarChart3, BookMarked, BookOpen, Bot, BrainCircuit, Check,
   CheckCircle2, ChevronDown, ChevronRight, CirclePlay, Clock3, Eye, FileQuestion,
