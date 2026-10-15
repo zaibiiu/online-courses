@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Link, NavLink, Route, Routes, useNavigate, useParams } from 'react-router-dom';
+import { HashRouter, Link, NavLink, Route, Routes, useNavigate, useParams } from 'react-router-dom';
+import '../css/app.css';
 import {
   ArrowRight, Award, BarChart3, BookMarked, BookOpen, Bot, BrainCircuit, Check,
   CheckCircle2, ChevronDown, ChevronRight, CirclePlay, Clock3, Eye, FileQuestion,
@@ -233,4 +234,4 @@ function NotFound(){return <section className="not-found"><strong>404</strong><h
 
 function Footer(){return <footer className="footer"><div className="container footer-grid"><div className="footer-brand"><Link to="/" className="brand light-brand"><span className="brand-mark"><GraduationCap/></span><span>Globe<span>Learn</span></span></Link><p>Learn practical skills, explore important ideas, and grow with confidence—wherever you are.</p><div className="footer-social"><span>f</span><span>in</span><span>▶</span><span>◎</span></div></div><div><h4>Learn</h4><Link to="/courses">All Courses</Link><Link to="/library">Digital Library</Link><Link to="/ai-learning">AI Learning</Link><Link to="/tests">Online Tests</Link></div><div><h4>Platform</h4><Link to="/packages">Membership</Link><Link to="/signup">Create Account</Link><Link to="/login">Student Login</Link><a href="#">Help Center</a></div><div><h4>Stay curious</h4><p>Get learning ideas and new course alerts.</p><div className="subscribe"><input placeholder="Email address"/><button><ArrowRight/></button></div><small>No spam. Just useful learning.</small></div></div><div className="container footer-bottom"><span>© 2026 GlobeLearn. All rights reserved.</span><div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div></div></footer>}
 
-createRoot(document.getElementById('app')).render(<BrowserRouter><App/></BrowserRouter>);
+createRoot(document.getElementById('app')).render(<HashRouter><App/></HashRouter>);
