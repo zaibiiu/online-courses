@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { HashRouter, Link, NavLink, Route, Routes, useNavigate, useParams } from 'react-router-dom';
+import { HashRouter, Link, NavLink, Navigate, Route, Routes, useNavigate, useParams } from 'react-router-dom';
 import './styles.css';
 import {
   ArrowRight, Award, BarChart3, BookMarked, BookOpen, Bot, BrainCircuit, Check,
@@ -71,23 +71,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home notify={notify} />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/courses/:courseId" element={<CourseDetail notify={notify} />} />
-          <Route path="/library" element={<Library notify={notify} />} />
-          <Route path="/ai-learning" element={<AITutor />} />
-          <Route path="/tests" element={<Tests />} />
-          <Route path="/tests/:testId" element={<TestRunner />} />
-          <Route path="/packages" element={<Packages notify={notify} />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/blogs/:slug" element={<BlogDetail />} />
-          <Route path="/contact" element={<Contact notify={notify} />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/privacy" element={<LegalPage type="privacy" />} />
-          <Route path="/terms" element={<LegalPage type="terms" />} />
-          <Route path="/login" element={<Auth mode="login" notify={notify} />} />
-          <Route path="/signup" element={<Auth mode="signup" notify={notify} />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
       <Footer />
