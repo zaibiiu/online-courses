@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
     base: '/online-courses/',
-    publicDir: false,
+    publicDir: 'public',
     plugins: [react()],
     build: {
         outDir: 'docs',
