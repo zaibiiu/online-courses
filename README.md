@@ -1,15 +1,17 @@
 # GlobeLearn
 
-A polished React frontend concept for an all-in-one educational platform, inspired by the structure and green marketplace style of SpotMV.
+A responsive React frontend for the GlobeP2P Online Education ecosystem. It combines the client-supplied GlobeLearn content with a cohesive green visual system and interactive frontend demos.
 
 ## Included pages
 
 - Landing page
-- Course catalogue and course detail
+- 10-course catalogue and course detail pages
 - Digital library and reader preview
 - AI learning assistant demo
-- Online MCQ tests and result screen
-- Membership packages
+- 100-question MCQ test concept and result preview
+- Six GlobeP2P activation packages
+- GlobeP2P-to-GlobeLearn “How it works” journey
+- Teach and sell your course page
 - Login and signup with GlobeP2P connection placeholder
 
 This repository is intentionally frontend-only. Content is static demo data, login/signup use browser storage for the demo flow, and all future integrations are represented as UI placeholders.
