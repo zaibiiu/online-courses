@@ -32,3 +32,16 @@ npm run build
 ```
 
 The static build is generated in `docs/` for GitHub Pages.
+
+## Dashboard preview
+
+The standalone dashboard is maintained in `public/admin/index.html`. Vite copies it
+to `docs/admin/index.html` during `npm run build`, so it remains available after
+future frontend builds.
+
+Live dashboard: https://zaibiiu.github.io/online-courses/admin/
+
+It includes the dashboard, courses and lecture previews, online MCQ tests,
+Digital Library and reader previews, AI tutor examples, frontend-aligned packages,
+and certificate downloads. The website link returns to the existing frontend.
+This is a design preview with sample data; backend services are not connected.
